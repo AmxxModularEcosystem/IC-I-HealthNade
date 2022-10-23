@@ -1,6 +1,6 @@
 # [VIpM-I] Health Nade
 
-Расширение добавляет тип предмета `HealthNade`. Интеграция с плагином [[fork] Healthnade](https://dev-cs.ru/resources/384/) версии `0.0.5f` и выше.
+Расширение добавляет тип предмета `HealthNade`. Интеграция с плагином [[fork] Healthnade](https://dev-cs.ru/resources/1271/) версии `0.0.5f` и выше.
 
 ## Параметры
 
