@@ -1,0 +1,7 @@
+{
+    "Type": "HealthNade",
+
+    "ThrowHealingAmount": 30.0,
+    "DrinkHealingAmount": 40.0,
+    "ExplodeRadius": 350.0
+}
