@@ -17,3 +17,4 @@
 
 - `File:Items/HealthNade/Default` - Обычная хилка
 - `File:Items/HealthNade/Improved` - Улучшенная хилка (повышен радиус на 50 и кол-во хп по 5 на каждый способ)
+- `File:Items/HealthNade/Imbalanced` - Дисбалансная хилка. Восполняет 9999 ХП в радиусе 10000 единиц
