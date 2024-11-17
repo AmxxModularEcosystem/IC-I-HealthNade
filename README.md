@@ -1,4 +1,4 @@
-# [VIpM-I] Health Nade
+# [IC-I] Health Nade
 
 Расширение добавляет тип предмета `HealthNade`. Интеграция с плагином [[fork] Healthnade](https://github.com/Giferns/HealthNade/releases) версии `0.0.22f` и выше.
 

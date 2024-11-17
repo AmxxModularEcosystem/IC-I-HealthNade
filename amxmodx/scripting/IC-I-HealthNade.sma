@@ -7,7 +7,7 @@
 #pragma semicolon 1
 #pragma compress 1
 
-public stock const PluginName[] = "[VipM-I] Health Nade";
+public stock const PluginName[] = "[IC-I] Health Nade";
 public stock const PluginVersion[] = "1.2.0";
 public stock const PluginAuthor[] = "ArKaNeMaN";
 public stock const PluginURL[] = "t.me/arkaneman";
