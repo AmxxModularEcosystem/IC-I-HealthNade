@@ -8,7 +8,7 @@
 #pragma compress 1
 
 public stock const PluginName[] = "[VipM-I] Health Nade";
-public stock const PluginVersion[] = "1.1.0";
+public stock const PluginVersion[] = "1.2.0";
 public stock const PluginAuthor[] = "ArKaNeMaN";
 public stock const PluginURL[] = "t.me/arkaneman";
 
@@ -36,10 +36,27 @@ public VipM_IC_OnInitTypes() {
     if (json_object_has_value(jItem, "ExplodeRadius", JSONNumber)) {
         TrieSetCell(tParams, "ExplodeRadius", json_object_get_real(jItem, "ExplodeRadius"));
     }
+
+    if (json_object_has_value(jItem, "Count", JSONNumber)) {
+        TrieSetCell(tParams, "Count", json_object_get_number(jItem, "Count"));
+    } else {
+        TrieSetCell(tParams, "Count", 1);
+    }
+
+    if (json_object_has_value(jItem, "MaxCount", JSONNumber)) {
+        TrieSetCell(tParams, "MaxCount", json_object_get_number(jItem, "Count"));
+    } else {
+        TrieSetCell(tParams, "MaxCount", 1);
+    }
 }
 
 @OnHealthNadeGive(const UserId, const Trie:tParams) {
-    new iNadeItem = HealthNade_GiveNade(UserId);
+    new count = 1;
+    TrieGetCell(tParams, "Count", count);
+    new maxCount = 1;
+    TrieGetCell(tParams, "MaxCount", maxCount);
+
+    new iNadeItem = HealthNade_GiveNade(UserId, count, maxCount);
     if (iNadeItem == HN_NULLENT) {
         return VIPM_STOP;
     }
